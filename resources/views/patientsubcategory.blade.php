@@ -1,0 +1,39 @@
+@extends('../navbar1')
+
+@section('title','Patient Sub Category')
+
+@section('content')
+<br><br>
+ <!-- form start -->
+ <div class="card card-primary col-md-8" style="margin: auto">
+    <div class="card-header">
+        <h3 class="card-title">Create Patient Sub Category</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    <form>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="category_id">Category</label>
+                <select name="category_id" class="custom-select rounded-0" id="category_id">
+                    <option>Category</option>
+                   
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Sub Category Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Sub Category Name">
+            </div>
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="button" class="btn btn-primary">Back</button>
+            <button type="submit" class="btn btn-success" style="float:right">Submit</button>
+        </div>
+        
+    </form>
+
+@endsection
+
+
